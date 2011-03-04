@@ -7,8 +7,8 @@ Spork.prefork do
   # need to restart spork for it take effect.
   ENV["RAILS_ENV"] ||= 'test'
   unless defined?(Rails)
-	require File.dirname(__FILE__) + "/../config/environment"  
-        # require File.expand_path("../../config/environment", __FILE__)
+	# require File.dirname(__FILE__) + "/../config/environment"  
+        require File.expand_path("../../config/environment", __FILE__)
   end
   require 'rspec/rails'
 
