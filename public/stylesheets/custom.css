@@ -3,7 +3,7 @@
 }
 
 body {
-  background: #cff;
+  background: #eff;
 }
 
 header {
@@ -12,20 +12,26 @@ header {
 
 header img {
   padding: 1em;
-  background: #fff;
+  background: #cef;
 }
 
 section {
+  background: red;
   margin-top: 1em;
   font-size: 120%;
-  padding: 20px;
-  background: #ff4;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 section h1 {
   font-size: 200%;
+  background: #ffc;
 }
 
+section p {
+  font-size: 120%;
+  background: #ffc;
+}
 /* links */
 
 a {
@@ -49,8 +55,8 @@ nav {
 }
 
 nav {
-  background-color: white;
-  padding: 0 0.7em;
+  background-color: cyan;
+  padding: 0.7em 0;
   white-space: nowrap;
 }
 
@@ -74,7 +80,7 @@ nav ul li a:visited {
   color: #09c;
 }
 
-navul ul li a:hover {
+nav ul li a:hover {
   text-decoration: underline;
 }
 
@@ -96,7 +102,7 @@ a.signup_button {
 /* Round corners */
 
 .round {
-  -moz=border-radius: 10px;
+  -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
@@ -113,4 +119,29 @@ footer {
 
 footer nav {
   float: none;
+  background: yellow;
+}
+
+/* User Show page */
+
+table.profile {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+td.main {
+  width: 70%;
+  padding: 1em;
+}
+
+td.sidebar {
+  width: 30%;
+  padding: 1em;
+  vertical-align: top;
+  background: #ffa;
+}
+
+.profile img.gravatar {
+  border: 1px solid #999;
+  margin-bottom: -15px;
 }
